@@ -7,7 +7,7 @@ t = np.empty(steps)
 dt = 0.01
 
 for i in range(steps):
-    f[i] = np.sin(2 * np.pi * dt * i) + 0.5*np.sin(2 * np.pi * dt * i * 8) + 0.25*np.sin(2 * np.pi * dt * i * 5) + 1
+    f[i] = np.sin(2 * np.pi * dt * i) + 0.5*np.sin(2 * np.pi * dt * i * 8) + 0.25*np.sin(2 * np.pi * dt * i * 5) + 1 + 0.1*np.sin(2 * np.pi* dt * i * 3)
     t[i] = dt*i
     t[i] = dt*i
 
